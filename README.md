@@ -1,2 +1,2 @@
 # Utils
-Handy and useful stuff
+Handy stuff
