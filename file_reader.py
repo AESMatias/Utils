@@ -29,9 +29,10 @@ reader = csv.reader(file)
 
 header = next(reader)  # The first line is the header
 data = [row for row in reader]
+lenght_data = len(data())
 # print('HEADER', data[0])
 # print('-'*50)
-for i in range(4, len(data)):
+for i in range(4, lenght_data):
     # print('+'*80)
     line_data = str(data[i]).strip('[]').strip("'").strip(' ').split(',')[0]
     # This RegEx remove extra spaces
