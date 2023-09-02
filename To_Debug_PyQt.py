@@ -6,6 +6,6 @@ if __name__ == '__main__':
     sys.__excepthook__ = hook
 
     app = QtWidgets.QApplication([])
-    ventana = MiVentana(*args)
-    ventana.show()
+    window = MyWindow(*args)
+    window.show()
     sys.exit(app.exec())
