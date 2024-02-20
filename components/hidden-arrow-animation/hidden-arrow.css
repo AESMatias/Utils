@@ -1,0 +1,33 @@
+.button {
+    position: relative;
+    display: inline-flex;
+    align-items: center;
+    padding: 15px 40px;
+    color: var(--primary);
+    font-size: var(--fontSizeRoot);
+    font-weight: var(--fontWeightBold);
+
+    text-decoration: none;
+    border: 2px solid var(--primary);
+    cursor: pointer;
+    transition: padding-right 0.2s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+}
+
+.button__icon {
+    position: absolute;
+    right: 24px;
+
+    opacity: 0;
+    transition: opacity 0.2s linear;
+}
+
+.button:hover {
+    padding-right: 60px;
+
+    color: var(--white);
+    background-color: var(--primary);
+}
+
+.button:hover .button__icon {
+    opacity: 1;
+}
